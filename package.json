@@ -4,8 +4,10 @@
 	"description": "",
 	"main": "server.ts",
 	"scripts": {
-		"start": "npx ts-node src/server/server",
+		"start": "node dist/server/server.js",
+		"start2": "npx ts-node src/server/server.ts",
 		"build": "parcel build src/client/index.html --out-dir dist/client",
+		"prebuild": "rm -rf dist/client",
 		"test": "jest"
 	},
 	"author": "Dawid Dahl",
