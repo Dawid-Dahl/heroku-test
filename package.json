@@ -6,8 +6,8 @@
 	"scripts": {
 		"start": "node dist/server/server.js",
 		"heroku-postbuild": "tsc && parcel build src/client/index.html --out-dir dist/client",
-		"start2": "npx ts-node src/server/server.ts",
-		"build2": "parcel build src/client/index.html --out-dir dist/client",
+		"dev-start": "npx ts-node src/server/server.ts",
+		"dev-build": "parcel build src/client/index.html --out-dir dist/client",
 		"prebuild": "rm -rf dist/client",
 		"test": "jest"
 	},
