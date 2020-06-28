@@ -5,7 +5,7 @@
 	"main": "server.ts",
 	"scripts": {
 		"start": "node dist/server/server.js",
-		"heroku-postbuild": "tsc && parcel build src/client/index.html --out-dir dist/client",
+		"build": "tsc && parcel build src/client/index.html --out-dir dist/client",
 		"dev-start": "npx ts-node src/server/server.ts",
 		"dev-build": "parcel build src/client/index.html --out-dir dist/client",
 		"prebuild": "rm -rf dist/client",
